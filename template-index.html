@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Knowledge Index</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/css/utilities.css" />
+    <link rel="stylesheet" type="text/css" href="/css/style.css" />
+    <script defer src="/js/controls.js"></script>
+    <script defer src="/js/contents-and-navigation.js"></script>
+  </head>
+  <body>
+    <nav>
+      <div class="container grid text-center">
+        <div class="logo">KNOWLEDGE<br />INDEX</div>
+        <div class="nav-title"></div>
+        <div class="dropdown-toggle">See All<br />Sections</div>
+      </div>
+      <div class="dropdown">
+        <div class="dropdown-bg">
+          <div class="dropdown-content container flex"></div>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <div class="container flex">
+        <aside class="sidebar">
+          <svg class="sidebar-show-control none" width="22" height="12" viewBox="0 0 22 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <title>Show Sidebar</title>
+            <path
+              d="M9.2571 11.1825V6.8679H21.0114V4.95028H9.2571V0.635653L3.98366 5.90909L9.2571 11.1825ZM0.272727 11.1648H2.19034V0.653409H0.272727V11.1648Z"
+              fill="black"
+              fill-opacity="0.25"
+            />
+          </svg>
+          <div class="sidebar-controls flex-column">
+            <svg class="sidebar-hide-control" width="22" height="12" viewBox="0 0 22 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <title>Hide Sidebar</title>
+              <path
+                d="M9.2571 11.1825V6.8679H21.0114V4.95028H9.2571V0.635653L3.98366 5.90909L9.2571 11.1825ZM0.272727 11.1648H2.19034V0.653409H0.272727V11.1648Z"
+                fill="black"
+                fill-opacity="0.25"
+              />
+            </svg>
+            <form class="sidebar-search-control flex">
+              <input class="sidebar-search-input" type="text" placeholder="Search..." /><button class="sidebar-search-submit" type="submit"></button>
+            </form>
+            <div class="sidebar-filter-control flex space-around">
+              <div>Filter by</div>
+              <div><span class="filter-by-section pointer">Current section</span> | <span class="filter-by-all pointer">All</span></div>
+            </div>
+          </div>
+          <div class="sidebar-content">
+            <div class="sidebar-toc"></div>
+            <div class="sidebar-search-result none">
+              <div class="sidebar-search-result-clear text-center pointer">Clear results</div>
+              <div class="sidebar-search-result-content">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim asperiores deleniti voluptatum molestias obcaecati! Assumenda quisquam
+                sequi possimus provident optio quae consequuntur perferendis explicabo nisi odit vero numquam, repudiandae labore quaerat quia ipsum
+                ratione quibusdam voluptatem tempora corrupti laborum architecto earum magnam. Illum tempore incidunt nam, mollitia architecto
+                assumenda explicabo.
+              </div>
+            </div>
+          </div>
+        </aside>
+        <div class="main-content">
+          <div class="section" id="javascript" data-title-short="JavaScript">
+            <div class="topic">
+              <a id="accessing-and-defining-object-properties" class="h1">Accessing and Defining Object Properties</a>
+              <div class="ref">
+                <div>References</div>
+                <ol>
+                  <li>
+                    <a href="http://es5.github.io/#x11.2.1">http://es5.github.io/#x11.2.1</a>
+                    <div>Annotated ECMAScript 5.1 Specification, §11.2.1 Property Accessors</div>
+                  </li>
+                </ol>
+              </div>
+              <p>
+                In ES/JS, properties of object may be accessed and defined using either the “dot notation” or the “bracket notation”.
+                <span class="cite">[Ref. 1]</span>
+              </p>
+              <a id="bracket-notation" class="h2">Bracket Notation</a>
+              <p>
+                An alternative to the dot notation is the bracket notation. Using this approach, one may use property names containing space
+                characters. The bracket notation also allows the property name to be set dynamically using a preexisting variable or using an
+                expression. The following example demonstrates the usage of bracket notation. Also this is how
+                <code class="inline">`inline code`</code> looks like. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit assumenda beatae
+                corporis. Quia animi ipsum ipsam eius fugit quisquam quaerat enim? Unde consequuntur dignissimos asperiores deleniti voluptatibus
+                delectus est? Natus similique maiores architecto! Explicabo natus maiores necessitatibus aut eos consectetur ipsa inventore ullam,
+                laborum unde, omnis pariatur voluptates dicta veritatis.
+              </p>
+              <a id="title_3" class="h3">Bracket Notation</a>
+              <p>
+                An alternative to the dot notation is the bracket notation. Using this approach, one may use property names containing space
+                characters. The bracket notation also allows the property name to be set dynamically using a preexisting variable or using an
+                expression. The following example demonstrates the usage of bracket notation. Also this is how
+                <code class="inline">`inline code`</code> looks like.
+              </p>
+              <a id="title_4" class="h4">Bracket Notation</a>
+              <p>
+                An alternative to the dot notation is the bracket notation. Using this approach, one may use property names containing space
+                characters. The bracket notation also allows the property name to be set dynamically using a preexisting variable or using an
+                expression. The following example demonstrates the usage of bracket notation. Also this is how
+                <code class="inline">`inline code`</code> looks like. Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores officiis
+                sequi quod neque, a minus. Explicabo officia officiis numquam consequuntur nihil ea sit pariatur, sint, temporibus nostrum a eius iste
+                harum libero vero optio molestiae esse minima laboriosam obcaecati, exercitationem dolor asperiores quasi perspiciatis? Harum eveniet
+                esse voluptas molestias aliquam.
+              </p>
+              <pre class="code"><code>var abc = {};
+abc[“pro perty1”] = “hi world”;
+var pName = “pro perty2”;
+abc[pName] = 123;
+abc[str1 + “ ” + str2] = “This property’s name is set dynamically using an expression!”;
+console.log(abc[“using an expression”]); 000
+
+<span class="comment">//OUTPUT:
+//This property’s name is set dynamically using an expression!</span>
+
+MORE CODE HERE</code></pre>
+            </div>
+            <div class="topic">
+              <a id="title_5" class="h1">Accessing and Defining Object Properties</a>
+              <div class="ref">
+                <div>References</div>
+                <ol>
+                  <li>
+                    <a href="http://es5.github.io/#x11.2.1">http://es5.github.io/#x11.2.1</a>
+                    <div>Annotated ECMAScript 5.1 Specification, §11.2.1 Property Accessors</div>
+                  </li>
+                </ol>
+              </div>
+            </div>
+          </div>
+          <div class="section" id="hw_fw" data-title-short="HW & FW" data-title-long="Hardware and Firmware"></div>
+          <div class="section" id="software" data-title-short="Software"></div>
+          <div class="section" id="web-dev_networking" data-title-short="Web Dev & Networking" data-title-long="Web Development and Networking"></div>
+          <div class="section" id="glossary" data-title-short="Glossary">
+            <div class="glossary-select-control flex">
+              <div><button class="active glossary-sections-btn">Sections</button> | <button class="glossary-index-btn">All Terms</button></div>
+            </div>
+            <div class="glossary-sections flex"></div>
+            <div class="glossary-index none"></div>
+          </div>
+          <div id="404">Sorry the resource you are looking for does not exist</div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

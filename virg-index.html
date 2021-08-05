@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Knowledge Index</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/css/utilities.css" />
+    <link rel="stylesheet" type="text/css" href="/css/style.css" />
+    <script defer src="/js/controls.js"></script>
+    <script defer src="/js/contents-and-navigation.js"></script>
+  </head>
+  <body>
+    <nav>
+      <div class="container grid text-center">
+        <div class="logo">KNOWLEDGE<br />INDEX</div>
+        <div class="nav-title"></div>
+        <div class="dropdown-toggle">See All<br />Sections</div>
+      </div>
+      <div class="dropdown">
+        <div class="dropdown-bg">
+          <div class="dropdown-content container flex"></div>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <div class="container flex">
+        <aside class="sidebar">
+          <svg class="sidebar-show-control none" width="22" height="12" viewBox="0 0 22 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <title>Show Sidebar</title>
+            <path
+              d="M9.2571 11.1825V6.8679H21.0114V4.95028H9.2571V0.635653L3.98366 5.90909L9.2571 11.1825ZM0.272727 11.1648H2.19034V0.653409H0.272727V11.1648Z"
+              fill="black"
+              fill-opacity="0.25"
+            />
+          </svg>
+          <div class="sidebar-controls flex-column">
+            <svg class="sidebar-hide-control" width="22" height="12" viewBox="0 0 22 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <title>Hide Sidebar</title>
+              <path
+                d="M9.2571 11.1825V6.8679H21.0114V4.95028H9.2571V0.635653L3.98366 5.90909L9.2571 11.1825ZM0.272727 11.1648H2.19034V0.653409H0.272727V11.1648Z"
+                fill="black"
+                fill-opacity="0.25"
+              />
+            </svg>
+            <form class="sidebar-search-control flex">
+              <input class="sidebar-search-input" type="text" placeholder="Search..." /><button class="sidebar-search-submit" type="submit"></button>
+            </form>
+            <div class="sidebar-filter-control flex space-around">
+              <div>Filter by</div>
+              <div><span class="filter-by-section pointer">Current section</span> | <span class="filter-by-all pointer">All</span></div>
+            </div>
+          </div>
+          <div class="sidebar-content">
+            <div class="sidebar-toc"></div>
+            <div class="sidebar-search-result none">
+              <div class="sidebar-search-result-clear text-center pointer">Clear results</div>
+              <div class="sidebar-search-result-content">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim asperiores deleniti voluptatum molestias obcaecati! Assumenda quisquam
+                sequi possimus provident optio quae consequuntur perferendis explicabo nisi odit vero numquam, repudiandae labore quaerat quia ipsum
+                ratione quibusdam voluptatem tempora corrupti laborum architecto earum magnam. Illum tempore incidunt nam, mollitia architecto
+                assumenda explicabo.
+              </div>
+            </div>
+          </div>
+        </aside>
+        <div class="main-content">
+          <div class="section" id="glossary" data-title-short="Glossary">
+            <div class="glossary-select-control flex">
+              <div><button class="active glossary-sections-btn">Sections</button> | <button class="glossary-index-btn">All Terms</button></div>
+            </div>
+            <div class="glossary-sections flex"></div>
+            <div class="glossary-index none"></div>
+          </div>
+          <div id="404">Sorry the resource you are looking for does not exist</div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

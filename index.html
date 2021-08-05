@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Knowledge Index</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/css/utilities.css" />
+    <link rel="stylesheet" type="text/css" href="/css/style.css" />
+    <script defer src="/js/controls.js"></script>
+    <script defer src="/js/contents-and-navigation.js"></script>
+  </head>
+  <body>
+    <nav>
+      <div class="container grid text-center">
+        <div class="logo">KNOWLEDGE<br />INDEX</div>
+        <div class="nav-title"></div>
+        <div class="dropdown-toggle">See All<br />Sections</div>
+      </div>
+      <div class="dropdown">
+        <div class="dropdown-bg">
+          <div class="dropdown-content container flex"></div>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <div class="container flex">
+        <aside class="sidebar">
+          <svg class="sidebar-show-control none" width="22" height="12" viewBox="0 0 22 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <title>Show Sidebar</title>
+            <path
+              d="M9.2571 11.1825V6.8679H21.0114V4.95028H9.2571V0.635653L3.98366 5.90909L9.2571 11.1825ZM0.272727 11.1648H2.19034V0.653409H0.272727V11.1648Z"
+              fill="black"
+              fill-opacity="0.25"
+            />
+          </svg>
+          <div class="sidebar-controls flex-column">
+            <svg class="sidebar-hide-control" width="22" height="12" viewBox="0 0 22 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <title>Hide Sidebar</title>
+              <path
+                d="M9.2571 11.1825V6.8679H21.0114V4.95028H9.2571V0.635653L3.98366 5.90909L9.2571 11.1825ZM0.272727 11.1648H2.19034V0.653409H0.272727V11.1648Z"
+                fill="black"
+                fill-opacity="0.25"
+              />
+            </svg>
+            <form class="sidebar-search-control flex">
+              <input class="sidebar-search-input" type="text" placeholder="Search..." /><button class="sidebar-search-submit" type="submit"></button>
+            </form>
+            <div class="sidebar-filter-control flex space-around">
+              <div>Filter by</div>
+              <div><span class="filter-by-section pointer">Current section</span> | <span class="filter-by-all pointer">All</span></div>
+            </div>
+          </div>
+          <div class="sidebar-content">
+            <div class="sidebar-toc"></div>
+            <div class="sidebar-search-result none">
+              <div class="sidebar-search-result-clear text-center pointer">Clear results</div>
+              <div class="sidebar-search-result-content">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim asperiores deleniti voluptatum molestias obcaecati! Assumenda quisquam
+                sequi possimus provident optio quae consequuntur perferendis explicabo nisi odit vero numquam, repudiandae labore quaerat quia ipsum
+                ratione quibusdam voluptatem tempora corrupti laborum architecto earum magnam. Illum tempore incidunt nam, mollitia architecto
+                assumenda explicabo.
+              </div>
+            </div>
+          </div>
+        </aside>
+        <div class="main-content">
+          <div class="section" id="hw_fw" data-title-short="HW & FW" data-title-long="Hardware and Firmware">
+            <div class="topic">
+              <p class="text-center">
+                This demo section is currently empty. See sections <a href="/javascript">JavaScript</a> and <a href="/software">Software</a> for sample content.
+              </p>
+            </div>
+          </div>
+          <div class="section" id="software" data-title-short="Software">
+            <div class="topic">
+              <a id="program-execution-models" class="h1">Program Execution Models</a>
+              <p>
+                A program execution model describes the stages that a computer program goes through, starting from source code representation all the way to being executed by a physical machine or CPU, and answers the question, “how can a source program get actuated?”. Most program implementations correspond to one of the following three execution models, the first being the build and execute model, the second being the interpreted model and the third being a hybrid of the first and the second.
+              </p>
+              <p>
+                Although source code written in a particular high level programming language may be commonly implemented using a specific execution model be it interpreted or built and executed (colloquially described as “compiled” type) or otherwise, this trait is not an inherent feature of the language itself but simply reflects popular practice. In fact, any high level language may be implemented using any execution model. For example, C, a traditionally “compiled/built and executed” language can be interpreted, just as Python, which traditionally uses an interpreted or a hybrid approach, can be fully compiled under a “build and execute” model. What defines a programming language is a language specification which is a standards documentation stipulating how a language should work and behave, but seldom requiring a particular translation method or execution model. Features of a language may however influence implementation choices and make it suitable for a particular execution model, for example whether the language is statically typed or dynamically typed.
+              </p>
+              <a id="buil-and-execute-model" class="h2">Build and Execute Model</a>
+              <div class="ref">
+                <div>References</div>
+                <ol>
+                  <li>
+                    <a href="https://www.tenouk.com/ModuleW.html">https://www.tenouk.com/ModuleW.html</a>
+                  </li>
+                  <li>
+                    <a href="https://inst.eecs.berkeley.edu/~cs61c/sp10/lec/19/2010SpCS61C-L19-ddg-RunProgII.pdf">https://inst.eecs.berkeley.edu/~cs61c/sp10/lec/19/2010SpCS61C-L19-ddg-RunProgII.pdf</a>
+                  </li>
+                </ol>
+              </div>
+              <p>
+                The build and execute model may be first broken down into two distinct processes that may be performed at separate times, namely the build process and the execution process. During the build process, the source is transformed in a number of steps ultimately into binary machine instructions (something that a machine is enable to understand and execute). Following the program’s translation into an executable binary form, during the execution process, it is moved from it’s storage location to the computer’s main memory (it may originally be in the main memory, upon which this move operation would not be necessary). Then, another loader program feeds the subject program from memory to the CPU for execution. Once execution is finished, the subject program is freed from memory. It should be noted that the build process needs to occur only once. Upon which, the built binary executable may be stored on a permanent storage medium. In contrast, the execution process may occur multiple times, which would be undertaken every time the executable program is called upon as requested by a user.
+              </p>
+              <a id="program-execution-model-buil-process" class="h3">Build Process</a>
+              <div class="ref">
+                <div>References</div>
+                <ol>
+                  <li>
+                    <a href="https://docs.microsoft.com/en-us/cpp/preprocessor/phases-of-translation?view=vs-2019">https://docs.microsoft.com/en-us/cpp/preprocessor/phases-of-translation?view=vs-2019</a>
+                  </li>
+                </ol>
+              </div>
+              <p>
+                As the program source file written in a high-level language gets translated into a binary form which would be readily executable by a target CPU, it goes through the following stages. 
+              </p>
+              <p>
+                It should be noted that the stages described in this section represent logical steps in the translation and construction of a target program under the build and execute model. These logical steps may or may not correspond to distinct modules or utilities included in a given program translation toolset. In fact, it may be the case that one module or utility performs the tasks of more than one logical step, just as the tasks of a single logical step may be accomplished using more than one module or utility. It may even be the case that a particular module performs part of the tasks of one logical step as well as part of the tasks of the next.
+              </p>
+              <ol>
+                <li>
+                  <strong>Preprocessing:</strong>
+                  <p>
+                    Comments are removed. Physical lines of code may be joined to form logical lines (line splicing). Preprocessing directives (lines of code beginning with the “<code class="inline">#</code>” 	character) are executed. These include expansion of defined macros, merging of #include files, code exclusion based on conditional compilation, etc. Each file that results from the preprocessing stage is called a <em>translation unit</em>, which may be stored as a distinct output file, but most often in practical is considered a temporary file to be discarded at the end of the build as it might be stored on disk or only in memory.
+                  </p>
+                </li>
+                <li>
+                  <strong>Compilation:</strong>
+                  <div class="ref">
+                    <div>References</div>
+                    <ol>
+                      <li>
+                        <a href="http://manpages.ubuntu.com/manpages/trusty/man1/arm-linux-androideabi-gcc.1.html">http://manpages.ubuntu.com/manpages/trusty/man1/arm-linux-androideabi-gcc.1.html</a>
+                      </li>
+                      <li>
+                        <a href="https://en.wikibooks.org/wiki/GNU_C_Compiler_Internals/GNU_C_Compiler_Architecture">https://en.wikibooks.org/wiki/GNU_C_Compiler_Internals/GNU_C_Compiler_Architecture</a>
+                      </li>
+                      <li>
+                        <a href="https://clang.llvm.org/docs/DriverInternals.html">https://clang.llvm.org/docs/DriverInternals.html</a>
+                      </li>
+                    </ol>
+                  </div>
+                  <p>
+                    The preprocessed code is taken as input. At this stage the objective is to transform the code into a binary form that is suitable for linking. The steps in the compilation stage may vary from toolset to toolset as there is no single regimented way of accomplishing the goal, although some steps are more essential than others and are therefore implemented in some fashion in all toolsets. In the early stage, the input source code is parsed to produce an internal representation of the program within the compiler (usually in the form of a syntax tree). Then it goes through multiple rounds of analysis which modifies this internal representation. The compiler might potentially transform its internal representation of the program into different forms of intermediate representation at various point of the compilation process. It might also perform optimizations on the code that it produces in order to render such code more efficient. Lastly, the compiler translates the intermediate representation of the program into machine instructions for a specific target machine. As previously stated, the objective is to produce binary format code that is suitable for the link stage. To that end, the output of the compiler module may vary between various program translation toolsets depending on the design and implementation of those tools. For example, some toolsets may have the compiler module output machine instructions first in assembly code format. This assembly code would then be passed to another module called an assembler which would ultimately translate the assembly code into binary machine code. Toolsets that implement such a design include the GNU Compiler Collection (GCC) and the Clang/LLVM toolset. Another design implementation may have the compiler module directly generate binary machine instructions without outputting assembly format code and without requiring another assembler module. This seems to be the case for the Microsoft C/C++ compiler unless assembly format code is still involved as an internal intermediate representation which is doubtfully the case (See §Program Compilation Process; §§Case Study: Microsoft C/C++ Compiler). Yet other design implementations may have the compiler module output code not in machine specific instructions but rather as machine independent, intermediate and transitory code to be fed as input to other tools or modules. For example, early C++ compilers would emit code in C which would subsequently be compiled by a C compiler. The reason for this is that as a more mature language at the time, lots of C compilers already existed for a variety of platforms and translating C++ code into C code allowed C++ source programs to be portable to all those platforms.
+                  </p>
+                </li>
+                <li>
+                  <strong>Assembly</strong><span> (Optional):</span>
+                  <div class="ref">
+                    <div>References</div>
+                    <ol>
+                      <li>
+                        <a href="https://en.wikibooks.org/wiki/X86_Disassembly/Assemblers_and_Compilers">https://en.wikibooks.org/wiki/X86_Disassembly/Assemblers_and_Compilers</a>
+                      </li>
+                      <li>
+                        <a href="https://inst.eecs.berkeley.edu/~cs61c/sp10/lec/18/2010SpCS61C-L18-ddg-RunProgI-6up.pdf">https://inst.eecs.berkeley.edu/~cs61c/sp10/lec/18/2010SpCS61C-L18-ddg-RunProgI-6up.pdf</a>
+                      </li>
+                    </ol>
+                  </div>
+                  <p>
+                    As mentioned in the prior compilation section, not all toolsets require the use of a separate assembler module. Therefore, this section describes only parts of those toolsets that do make use of an assembler (such as GCC and Clang/LLVM). The assembler takes as input the assembly code produced by the compiler and translates it into binary machine code that is ready for the link stage. Since assembly instructions usually have a one to one correspondence relationship with binary machine instructions, this translation process is relatively straight-forward. The resulting file produced by the assembler, containing the machine specific binary instructions is called an object file and may be structured according to a particular binary file format (see §ABI and Binary File Formats -> §§Binary File Formats) as required by the target platform where the built program is intended to run on.
+                  </p>
+                </li>
+                <li>
+                  <strong>Linking:</strong>
+                  <p>
+                    The source code of a working program needs not be stored in a single monolithic file, but may instead be store within separate smaller source files. This leads to the advantage of increased program modularity which helps developers in managing projects involving large and complex programs with great amounts of code. Another advantage of this fragmentation of source code is that it allows separate compilation, where different parts of the source may be compiled at different times and when modification of code in selected source files among the whole set occurs, only those files containing changes need to be recompiled instead of having all code belonging to the program be recompiled each time a change in the source occurs. As such, this is all made possible with the help of the linker module during the build process. In essence, the linker takes pieces of code in separate files and either merge or link them together to form a single executable program. During the build process, the input to the linker consists of previously compiled object files. The code within these object files may contain references to code within other object files that are also part of the program and would cause what are called unresolved external symbols. Here, symbol means functions and identifiers that have been declared in the source code and are subsequently considered as distinct entities. The term unresolved external symbol means a symbol that was previously declared but has not yet been assigned a definition. Thus, the linker takes all the constituent object files of a program and attempts to resolve all the unresolved external symbols by making use of a data structure called symbol table (See §Program Compilation Process; §§Symbol Table). A symbol table is found within each object file and contains all the symbols declared within that translation unit, as well as the address of code within the file corresponding to those symbols that are resolved. Once the linker has located all the relevant pieces of code needed to resolve all unresolved symbols encountered, these pieces of code are either all copied over to form a single executable file or they are linked with the translation unit containing the main function to form a dynamically linked executable file, that is the location of these pieces of code are provided so that at program load time or during program run time, these pieces of code can be found and executed.
+                  </p>
+                </li>
+              </ol>
+              <a id="program-execution-models-execution-process" class="h3">Execution Process</a>
+              <p>[TO BE WRITTEN] Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non at nihil quos, rem dolor autem doloribus natus culpa dignissimos mollitia ratione fuga optio totam odio esse soluta porro omnis. Recusandae numquam modi quae nam harum odio quis doloribus a id ipsum molestias facilis, ea consectetur accusantium architecto? Commodi, officiis numquam.</p>
+              <a id="program-execution-models-interpreted-model" class="h2">Interpreted Model</a>
+              <div class="ref">
+                <div>References</div>
+                <ol>
+                  <li>
+                    <a href="https://en.wikibooks.org/wiki/Python_Programming/Interactive_mode">https://en.wikibooks.org/wiki/Python_Programming/Interactive_mode</a>
+                  </li>
+                  <li>
+                    <a href="https://en.wikipedia.org/wiki/Interpreter_(computing)">https://en.wikipedia.org/wiki/Interpreter_(computing)</a>
+                  </li>
+                </ol>
+              </div>
+              <p>
+                The interpreted model of program execution is an approach which provides direct execution of program code in text form without requiring it to be compiled or built beforehand. To implement this approach //to accomplish this//, a translation tool called an interpreter is used. The interpreter is a program which processes code in text form one statement at a time (in many cases, internally generating a corresponding syntax tree), immediately evaluates it, and then executes it by directing the CPU to perform equivalent machine instructions. This actively changes the state of the program while some of the previously encountered structures and statements are kept in memory. Using this approach, the input to the interpreter may be provided as a prior composed source file or it may be fed dynamically statement-by-statement, which is the “typical behavior demonstrated by scripting languages”, for example Bash, AWK, etc.
+              </p>
+            </div><!-- .topic -->
+          </div><!-- .section#software -->
+          <div class="section" id="web-dev_networking" data-title-short="Web Dev & Networking" data-title-long="Web Development and Networking">
+            <div class="topic">
+              <p class="text-center">
+                This demo section is currently empty. See sections <a href="/javascript">JavaScript</a> and <a href="/software">Software</a> for sample content.
+              </p>
+            </div>
+          </div>
+          <div class="section" id="database" data-title-short="Database">
+            <div class="topic">
+              <p class="text-center">
+                This demo section is currently empty. See sections <a href="/javascript">JavaScript</a> and <a href="/software">Software</a> for sample content.
+              </p>
+            </div>
+          </div>
+          <div class="section" id="javascript" data-title-short="JavaScript">
+            <div class="topic">
+              <a id="accessing-and-defining-object-properties" class="h1">Accessing and Defining Object Properties</a>
+              <div class="ref">
+                <div>References</div>
+                <ol>
+                  <li>
+                    <a href="http://es5.github.io/#x11.2.1">http://es5.github.io/#x11.2.1</a>
+                    <div>Annotated ECMAScript 5.1 Specification, §11.2.1 Property Accessors</div>
+                  </li>
+                </ol>
+              </div><!-- .ref -->
+              <p>
+                In ES/JS, properties of object may be accessed and defined using either the “dot notation” or the “bracket notation”.
+                <span class="cite">[Ref. 1]</span>
+              </p>
+              <a id="dot-notation" class="h2">Dot Notation</a>
+              <p>The following is an usage example of the dot notation:</p>
+              <pre class="code"><code>var abc = {};
+abc.property1 = “hello world”;
+abc.property2 = {}; <span class="comment">//Here property2 is defined as a nested object</span>
+abc.property2.nestedProp1 = 123; <span class="comment">//Here a property has been defined on the nested object</span>
+abc.property3 = function() {...}; <span class="comment">//Here a method has been defined on the outer object</span></code></pre>
+              <a id="bracket-notation" class="h2">Bracket Notation</a>
+              <p>
+                An alternative to the dot notation is the bracket notation. Using this approach, one may use property names containing space characters. The bracket notation also allows the property name to be set dynamically using a preexisting variable or using an expression. The following example demonstrates the usage of bracket notation:
+              </p>
+              <pre class="code"><code>var abc = {};
+abc[“pro perty1”] = “hi world”;
+var pName = “pro perty2”;
+abc[pName] = 123;
+var str1 = “using an”;
+var str2 = “expression”;
+abc[str1 + “ ” + str2] = “This property’s name is set dynamically using an expression!”;
+console.log(abc[“using an expression”]);
+
+<span class="comment">//OUTPUT:
+//This property’s name is set dynamically using an expression!</span></code></pre>
+            </div><!-- .topic -->
+            <div class="topic">
+              <a id="object-built-in-constructor" class="h1">Object (Standard Built-in Constructor)</a>
+              <div class="ref">
+                <div>References</div>
+                <ol>
+                  <li>
+                    <a href="http://es5.github.io/#x15.2">http://es5.github.io/#x15.2</a>
+                    <div>Annotated ECMAScript 5.1 Specification, §15.2 Object Objects</div>
+                  </li>
+                  <li>
+                    <a href="http://es5.github.io/#x15.2.3.1">http://es5.github.io/#x15.2.3.1</a>
+                    <div>Annotated ECMAScript 5.1 Specification, §15.2.3.1 Object.prototype</div>
+                  </li>
+                  <li>
+                    <a href="http://es5.github.io/#x15.2.2.1">http://es5.github.io/#x15.2.2.1</a>
+                    <div>Annotated ECMAScript 5.1 Specification, §15.2.2.1 new Object ( [ value ] )</div>
+                  </li>
+                  <li>
+                    <a href="http://es5.github.io/#x15.2.4">http://es5.github.io/#x15.2.4</a>
+                    <div>Annotated ECMAScript 5.1 Specification, §15.2.4 Properties of the Object Prototype Object</div>
+                  </li>
+                  <li>
+                    <a href="http://es5.github.io/#x15">http://es5.github.io/#x15</a>
+                    <div>Annotated ECMAScript 5.1 Specification, §15 Standard Built-in ECMAScript Objects</div>
+                  </li>
+                  <li>
+                    <a href="http://es5.github.io/#x15.2.3">http://es5.github.io/#x15.2.3</a>
+                    <div>Annotated ECMAScript 5.1 Specification, §15.2.3 Properties of the Object Constructor</div>
+                  </li>
+                  <li>
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object</a>
+                    <div><em>MDN web docs</em> reference on built-in <strong>Object</strong> constructor.</div>
+                  </li>
+                </ol>
+              </div><!-- .ref -->
+              <p>
+                <code class="inline">Object</code> is a standard built-in Function object. <span class="cite">[Ref. 1]</span> Being a built-in object means that it is available whenever an ES program begins execution. <code class="inline">Object</code> is designed to be used a constructor.  It also has a number of useful, own methods defined on it which may be invoked by ES/JS user code.
+              </p>
+              <p>
+                The value of its named, own property <code class="inline">prototype</code> (i.e. <code class="inline">Object.prototype</code>), is another built-in object referred to by the Spec as “Object prototype object”, which has a number of useful, own properties and methods which are inherited by all objects instantiated from the <code class="inline">Object</code> constructor by way of how constructors work. (See §“new” Operator and Constructors; §§Description) These inherited properties and methods are thus directly accessible on each instantiation of <code class="inline">Object</code>. In practice, the “Object prototype object” is inherited by a vast number of other objects as the value of the first structured item at the beginning of their respective prototype chain (Note: At the very beginning of all prototype chains is a non-structured, primitive value of <code class="inline">null</code>.). Examples of such objects which inherits from the “Object prototype object” include all instances of native <code class="inline">Function</code> objects, all instances of native <code class="inline">Array</code> objects and more.
+              </p>
+              <a id="instantiation-of-object" class="h2">Instantiations of Object</a>
+              <p>
+                A basic instantiation of the <code class="inline">Object</code> constructor is often referred to as an “<code class="inline">Object</code> object”, and even by some authors as simply an “Object” or “object” confusingly so since ambiguity may arise in conjunction with the more general concept of an “ECMAScript object”. (See §Structured Data Types; §§ECMAScript Object Definition) 
+              </p>
+              <p>
+                (Side note: In particular cases, when the <code class="inline">Object</code> constructor is invoked with one argument of some select primitive types, the return value is not an <code class="inline">Object</code> object, rather a type conversion operation is performed on the value of the argument instead. More on this topic below.)
+              </p>
+              <p>
+                In essence, an <code class="inline">Object</code> object is simply a native ECMAScript object which has its <strong>[[Prototype]]</strong> internal property set to the value of <code class="inline">Object.prototype</code>. (See §§“Object.prototype” Property and the Built-in Object Prototype Object) Also, since all data of structural types in the JS implementation are created in an area of memory called the “heap” and as they are assigned to some other element or are passed as argument, they are assigned/passed by reference, then so do these features apply to <code class="inline">Object</code> objects.
+              </p>
+              <p>
+                Three approaches to create Object objects are the following:
+              </p>
+              <ul>
+                <li>
+                  Using <span class="inline">new Object()</span> invocation
+                </li>
+                <li>
+                  Using object literal
+                </li>
+                <li>
+                  Using the <span class="inline">Object.create()</span> method
+                </li>
+              </ul>
+              <a id="new-object-invocation" class="h3">Using “new Object()” invocation</a>
+              <p>
+                <span class="inline">Object</span> objects can be created by invoking <span class="inline">Object</span> as a constructor through the use of the <span class="inline">new</span> operator. (See §“new” Operator and Constructors) For the algorithm as defined by the Spec for this operation, see above.
+              </p>
+              <a id="using-object-literal" class="h3">Using object literal</a>
+              <p>
+                <span class="inline">Object</span> objects can also be created using what’s called the “Object Literal Syntax” which is demonstrated in the following example:
+              </p>
+              <pre class="code"><code>var abc = {
+  propertyName1: “value #1”,
+  propertyName2: 123,
+  propertyName3: function() {...} <span class="comment">// This is method of abc, which may be invoked as “abc  propertyName3();”</span>
+  propertName4: {} <span class="comment">//This is a empty nested object created again using object literal syntax.</span>
+};</code></pre>
+              <a id="using-object_create" class="h3">Using the “Object.create()” method</a>
+              <p>See §Notable Own Properties of the Object Built-in Constructor.</p>
+            </div><!-- .topic -->
+            <div class="topic">
+              <a id="closure" class="h1">Closure</a>
+              <div class="ref">
+                <div>References</div>
+                <ol>
+                  <li>
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures</a>
+                    <div><em>MDN Web Docs</em> article on “closures”.</div>
+                  </li>
+                  <li>
+                    <a href="https://www.ecma-international.org/ecma-262/11.0/index.html#sec-prepareforordinarycall">https://www.ecma-international.org/ecma-262/11.0/index.html#sec-prepareforordinarycall</a>
+                    <div>ECMAScript 2020 Language Specification, §9.2.1.1 PrepareForOrdinaryCall ( F, newTarget )</div>
+                  </li>
+                  <li>
+                    <a href="https://www.ecma-international.org/ecma-262/11.0/index.html#sec-block-runtime-semantics-evaluation">https://www.ecma-international.org/ecma-262/11.0/index.html#sec-block-runtime-semantics-evaluation</a>
+                    <div>ECMAScript 2020 Language Specification, §13.2.13 Runtime Semantics: Evaluation</div>
+                  </li>
+                </ol>
+              </div><!-- .ref -->
+              <p>
+                In ES/JS, each time a function is executed, a new execution context and a new “lexical environment” construct are established. (See §Execution Context) <span class="cite">[Ref. 2]</span> In fact, the new “lexical environment” construct as defined by the ES Spec is assigned as a component of the new execution context and internally has a reference to an “outer” “lexical environment” construct. (See §Lexical Environment) That “outer” “lexical environment” construct represents the lexical environment that logically surrounds the definition in the source code of the currently invoked function, and it is remembered and stored as an internal property/slot (See §Structured Data Types; §§ECMAScript Object Definition) of the Function object when that function is parsed and instantiated. As such, each time a given function is executed, it “remembers” the surrounding lexical environment from the place where it is defined.
+              </p>
+              <a id="garbage-collection-and-persistent-lexical-environments" class="h2">Garbage Collection and Persistent Lexical Environments</a>
+              <p>
+                A notable feature that distinguish ES/JS from many other programming languages is that the “lexical environment” associated with a given function or piece of code may be preserved even after execution has returned from such function or code so long as at least one entity which maintains a reference to that lexical environment remains available in the program. This is in contrast to languages, where the lexical environment associated with a function/stack frame is lost when execution exits the function/stack frame. Such particular feature of ES/JS is due to the fact that “lexical environments” in this language are actually implemented as heap objects whose memory allocation and deallocation is automatically managed by ES/JS’s garbage collection system. The following is an example demonstrating the above claims and statements.
+              </p>
+              <p><strong>Example 1:</strong></p>
+<pre class="code"><code>function outerFct(){
+  let privateVar = “this string is private data”;
+  function innerFct(){
+    console.log(privateVar);
+  }; <span class="comment">//innerFct forms a “closure” with and has access to all data available within outerFct’s function body. This includes privateVar.</span>
+  return innerFct;
+};
+let test = outerFct(); <span class="comment">//This operation in effect assigns innerFct to test</span>
+test(); <span class="comment">//This statement successfully accesses and logs the value of privateVar. This also demonstrates that the lexical environment associated with outerFct still exists even if at this point execution has already returned from outerFct.</span>
+test = null; <span class="comment">//Now the lexical environment associated with outerFct may be garbage collected by the JS engine since no more reference to it remains.</span>
+
+OUTPUT:
+this string is private data</code></pre>
+              <a id="closure-usage-patterns" class="h2">Usage Patterns (With Examples)</a>
+              <p>
+                The above example provides one use case scenario of closures in ES/JS using a nested function declaration within an outer function declaration. However, the features and capabilities of closures may be exploited in ES/JS through many different usage patterns to achieve different purposes. Such usage patterns as will be expanded upon in this section are: nested function declarations/expressions within an outer function declaration/expression, function declarations/expressions within a “block” statement and function declarations/expressions within an IIFE (immediately invoked function expression). 
+              </p>
+              <a id="nested-functions-within-an-outer-function" class="h3">Nested Functions within an Outer Function</a>
+              <p>
+                As seen in the first example, a nested function is a function declaration or function expression which occurs within the body of an outer function declaration or function expression. This closure usage pattern may be used for multiple purposes including: data hiding and encapsulation, behaving as pseudo-template/function factory, and embedding callback function arguments for APIs which accept none.
+              </p>
+              <a id="data-hiding-and-encapsulation" class="h4">Data Hiding and Encapsulation</a>
+              <p>
+                A nested function is able to access all variables and functions declared within the body of the outer function since they constitute the nested function’s immediate surrounding lexical environment, but those same variables and functions would not be accessible to code outside of the outer function (e.g. global scoped code). As such, a nested function could be written as an “accessor” function that directly manipulates “private” data within the outer function while the nested function itself could be return from the outer function or otherwise be assigned to a publicly accessible identifier. This scenario would be useful for the purpose of data hiding and encapsulation and is demonstrated in the example below.
+              </p>
+              <p><strong>Example 2:</strong></p>
+<pre class="code"><code>function makeCounter(){
+  let count = 1; <span class="comment">//This “private” variable is only accessible within makeCounter and by the function expression return by the next statement.</span>
+  return function(){ console.log(count++); } <span class="comment">//This is the accessor function that may manipulate the “private” variable and that is to be exposed to code outside of makeCounter.</span>
+};
+let counter1 = makeCounter(); <span class="comment">//The invocation of makeCounter on the RHS of the statement establishes a new lexical environment which would correspond to the “outer” lexical environment of the returned function object that is assigned to counter1 should such return function be invoked</span>
+let counter2 = makeCounter(); <span class="comment">//This also establishes a new lexical environment with the same characteristics as described in the comment above, but is a separate, distinct entity from the lexical environment created by the statement above.</span>
+counter1(); <span class="comment">//logs “1”</span>
+counter1(); <span class="comment">//logs “2”</span>
+counter1(); <span class="comment">//logs “3”</span>
+counter2(); <span class="comment">//logs “1”</span>
+counter2(); <span class="comment">//logs “2”</span>
+
+OUTPUT:
+1
+2
+3
+1
+2</code></pre>
+              <a id="closure-behaving-as-function-factory" class="h4">Behaving as “Pseudo-template”/“Function Factory”</a>
+              <p>
+                By making use of closures using nested functions within an outer function, it is possible to achieve an observable behaviour similar to albeit less powerful than the “template” feature of C++. Notice that that behaviour is described as “observable” since it is functionally similar but structurally different under the hood when compared to that of C++ templates. What this use case involves is having an outer function return an inner function which may be functionally different on each invocation of the outer function depending on the argument(s) supplied to the outer function. The outer function in this scenario is termed by some as a “function factory”. The following is a concrete example demonstrating this use case.
+              </p>
+              <p><strong>Example 3:</strong></p>
+<pre class="code"><code>function makeAdder(n1){
+  return function(n2){console.log(n1 + n2);}
+};
+let addTo3 = makeAdder(3);
+let addTo5 = makeAdder(5);
+addTo3(4); <span class="comment">//logs “7”</span>
+addTo5(5); <span class="comment">//logs “10”</span>
+addTo3(1); <span class="comment">//logs “4”</span>
+addTo5(0); <span class="comment">//logs “5”</span>
+
+OUTPUT:
+7
+10
+4
+5</code></pre>
+              <p>
+                In <strong>Example 3</strong>, the statements <code class="inline">let addTo3 = makeAdder(3);</code> and <code class="inline">let addTo5 = makeAdder(5);</code> both in effect establish a new lexical environment for their execution of the <code class="inline">makeAdder</code> function and each of the newly established lexical environment binds the identifier <code class="inline">n1</code> to the respective value passed as argument for their associated <code class="inline">makeAdder</code> invocation. In subsequent statements, when the inner functions returned from <code class="inline">makeAdder</code> and assigned to <code class="inline">addTo3</code> and <code class="inline">addTo5</code> are invoked, <code class="inline">n1</code> is accessed from the previously created lexical environments that are mentioned above.
+              </p>
+            </div><!-- .topic -->
+          </div><!-- .section#javascript -->
+          <div class="section" id="C++" data-title-short="C++">
+            <div class="topic">
+              <p class="text-center">
+                This demo section is currently empty. See sections <a href="/javascript">JavaScript</a> and <a href="/software">Software</a> for sample content.
+              </p>
+            </div>
+          </div>
+          <div class="section" id="shell" data-title-short="Shell">
+            <div class="topic">
+              <p class="text-center">
+                This demo section is currently empty. See sections <a href="/javascript">JavaScript</a> and <a href="/software">Software</a> for sample content.
+              </p>
+            </div>
+          </div>
+          <div class="section" id="glossary" data-title-short="Glossary">
+            <div class="glossary-select-control flex">
+              <div><button class="active glossary-sections-btn">Sections</button> | <button class="glossary-index-btn">All Terms</button></div>
+            </div>
+            <div class="glossary-sections flex"></div>
+            <div class="glossary-index none"></div>
+          </div>
+          <div id="404">Sorry the resource you are looking for does not exist</div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
