@@ -1,5 +1,12 @@
-/index.html   / 301!
-/template-index.html   / 301!
-/virg-index.html   / 301!
-/.gitignore / 301!
+/index.html   /   301!
+/template-index.html   /   301!
+/virg-index.html   /   301!
+/dev*   /   301!
+/.gitignore   /   301!
+/package-lock.json   /   301!
+/package.json   /   301!
+/_redirects   /   301!
+/node_modules*   /   301!
+/.prettierignore   /   301!
+/.prettierrc   /   301!
 /*   /index.html   200
