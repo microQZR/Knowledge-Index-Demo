@@ -10,14 +10,12 @@ A web application with a minimalist design serving as a personal notebook/refere
 - Auto-generation of glossary page and tables of contents based on markup content.
 - Minimalist design.
 <br>
-<br>
 
 ## Files of Interest
 
 - [index.html](index.html) : Target file to be served, holds all reading material.
 - [virg-index.html](virg-index.html) : Baseline application scaffold without reading material.
 - [template-index.html](template-index.html) : Application specific markup formatting reference/template.
-<br>
 <br>
 
 ## Live Demo
