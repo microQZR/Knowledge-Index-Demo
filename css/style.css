@@ -397,10 +397,10 @@ nav .dropdown-content > .active {
 }
 
 .h1 {
-  font-size: 35px;
+  font-size: 38px;
   font-weight: 700;
   margin-top: 120px;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
   display: block;
   color: inherit;
   text-align: center;
@@ -453,6 +453,7 @@ nav .dropdown-content > .active {
   /* border: 1px solid var(--border-light); */
   border-radius: var(--border-radius-standard);
   padding: 30px 60px;
+  line-height: 1.35;
 }
 
 .topic-toc * {
@@ -466,18 +467,18 @@ nav .dropdown-content > .active {
 }
 
 .topic-toc .h1-toc {
-  margin-top: 13px;
+  margin-top: 18px;
 }
 .topic-toc .h2-toc {
-  margin-top: 8px;
+  margin-top: 13px;
   margin-left: 16px;
 }
 .topic-toc .h3-toc {
-  margin-top: 7px;
+  margin-top: 12px;
   margin-left: 32px;
 }
 .topic-toc .h4-toc {
-  margin-top: 7px;
+  margin-top: 12px;
   margin-left: 48px;
 }
 
@@ -526,6 +527,9 @@ nav .dropdown-content > .active {
   transition: 100ms;
   color: #000;
   text-align: center;
+  box-shadow: 0 3px 15px 3px var(--border-light);
+  padding: 0.85em;
+  margin: 0.85em;
 }
 
 .glossary-sections > *:hover {
