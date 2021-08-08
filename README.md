@@ -6,7 +6,7 @@ A web application with a minimalist design serving as a personal notebook/refere
 
 ## Features
 
-- Custom client-side routing mechanism implemented using the HTML Spec's [History API](https://developer.mozilla.org/en-US/docs/Web/API/History_API). Requires only one HTTP request-response cycle on initial page load or manual page refresh. Subsequent path navigations handled client-side.
+- Custom client-side routing mechanism implemented using the HTML Spec's [History API](https://developer.mozilla.org/en-US/docs/Web/API/History_API). (Akin to [React Router](https://github.com/ReactTraining/react-router)) Requires only one HTTP request-response cycle on initial page load or manual page refresh. Subsequent path navigations handled client-side.
 - Auto-generation of glossary page and tables of contents based on markup content.
 - Minimalist design.
 <br>
