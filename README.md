@@ -7,7 +7,7 @@ A web application with a minimalist design serving as a personal notebook/refere
 ## Features
 
 - Custom client-side routing mechanism implemented using the HTML Spec's [History API](https://developer.mozilla.org/en-US/docs/Web/API/History_API). (Akin to [React Router](https://github.com/ReactTraining/react-router)) Requires only one HTTP request-response cycle on initial page load or manual page refresh. Subsequent path navigations handled client-side.
-- Auto-generation of glossary page and tables of contents based on markup content.
+- A JavaScript-based, custom HTML templating engine auto-generates the glossary page and the tables of contents. The templating engine also converts the author-provided, concise-format markup content into an HTML5-compliant format and inserts appropriate `class` attributes for proper styling using CSS.
 - Minimalist design.
 <br>
 
@@ -20,4 +20,4 @@ A web application with a minimalist design serving as a personal notebook/refere
 
 ## Live Demo
 
-See a live demo of the application with some sample content [here](https://knowledge-index-demo.netlify.app/).
+See a live demo of the application with some sample content [here](https://kindex.netlify.app/).
